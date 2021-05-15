@@ -1,4 +1,4 @@
-# Interlude - Improve with the Gradient 
+Interlude - Improve with the Gradient
 
 ![The Learning Cycle: Improve](../assets/Improve.png){width=400px}  
 

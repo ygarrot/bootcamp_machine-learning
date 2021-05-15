@@ -18,8 +18,8 @@ class MyLinearRegression():
     def cost_(self, x, y):
         y = y.flatten()
         y_hat = self.predict_(x)
-        sum = y_hat - y
-        return sum @ sum / (2 * y.shape[0])
+        y_dif = y_hat - y
+        return y_dif @ y_dif / (2 * y.shape[0])
 
     def fit_(self, x, y):
         y = y.flatten()
@@ -33,8 +33,8 @@ class MyLinearRegression():
         y = y.flatten()
         y_hat = self.predict_(x)
         y_hat = y_hat.flatten()
-        sum = y_hat - y
-        return sum @ sum / (y.shape[0])
+        y_dif = y_hat - y
+        return y_dif @ y_dif / (y.shape[0])
 
 # x = np.array([[12.4956442], [21.5007972], [
 #              31.5527382], [48.9145838], [57.5088733]])

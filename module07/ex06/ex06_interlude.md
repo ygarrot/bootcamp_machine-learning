@@ -1,4 +1,4 @@
-# Interlude - Gradient Descent
+Interlude - Gradient Descent
 Now comes the fun part: _gradient descent_!  
 
 The algorithm is not that different from the one used in univariate linear regression. As you might have guessed, what will change is that the $j$ indice needs to run from $0$ to $n$ instead of $0$ to $1$. So all you need is a more generic algorithm, which can be expressed in pseudocode as the following:

@@ -46,8 +46,7 @@ def map_category(y, i):
     return np.vectorize(isMyFavoriteZipCode)(y, i)
 
 def model_training(i, thetas, y_train, x_train):
-    lr = MyLR(np.ones(y_train.shape[0]), alpha=4e-5, n_cycle=22000)
-    # lr = MyLR(thetas[i], alpha=4e-5, n_cycle=22000)
+    lr = MyLR(thetas[i], alpha=4e-5, n_cycle=22000)
     lr.fit_(x_train, map_category(y_train, i))
     return lr
 

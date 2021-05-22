@@ -1,4 +1,4 @@
-# Interlude - Regularized Gradient
+Interlude - Regularized Gradient
 
 ![The Learning Cycle - Improve](../assets/Improve.png){width=300px}  
 
